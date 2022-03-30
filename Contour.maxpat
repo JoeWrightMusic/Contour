@@ -40,6 +40,38 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"format" : 6,
+					"id" : "obj-100",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 726.0, 1161.0, 50.0, 22.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-96",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "f2NoteName.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"offset" : [ 0.0, 0.0 ],
+					"patching_rect" : [ 711.0, 1205.0, 128.0, 128.0 ],
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-93",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
@@ -71,11 +103,24 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
-					"parameter_enable" : 0,
+					"parameter_enable" : 1,
 					"patching_rect" : [ 1342.0, 673.0, 24.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 827.925629456885986, 464.0, 24.0, 24.0 ],
-					"uncheckedcolor" : [ 0.448448061943054, 0.509629547595978, 0.51268458366394, 1.0 ]
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_enum" : [ "off", "on" ],
+							"parameter_initial" : [ 0 ],
+							"parameter_longname" : "toggle[5]",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "toggle[5]",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"uncheckedcolor" : [ 0.448448061943054, 0.509629547595978, 0.51268458366394, 1.0 ],
+					"varname" : "toggle[5]"
 				}
 
 			}
@@ -274,11 +319,11 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-116",
-					"linecount" : 51,
+					"linecount" : 48,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1088.166666666666742, -224.256756722927094, 166.0, 633.0 ],
+					"patching_rect" : [ 1088.166666666666742, -224.256756722927094, 172.0, 596.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 30,
 					"presentation_rect" : [ 1021.006618845731055, 395.0, 316.0, 375.0 ],
@@ -1432,7 +1477,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 0.0, 0.0, 640.0, 480.0 ],
+						"rect" : [ 91.0, 106.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1468,7 +1513,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "int" ],
 									"patching_rect" : [ 64.75, 100.0, 29.5, 22.0 ],
-									"text" : "> 0."
+									"text" : "< 0."
 								}
 
 							}
@@ -4098,7 +4143,6 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
-						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"format" : 6,
@@ -7091,7 +7135,6 @@
 								"filename" : "NF_TXT_WA.wav",
 								"filekind" : "audiofile",
 								"id" : "u686001752",
-								"selection" : [ 0.258215962441315, 0.32472613458529 ],
 								"loop" : 1,
 								"content_state" : 								{
 									"pitchshift" : 1,
@@ -7215,6 +7258,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-96", 0 ],
+					"source" : [ "obj-100", 0 ]
 				}
 
 			}
@@ -8205,6 +8255,7 @@
 			"obj-7" : [ "slider[2]", "slider[2]", 0 ],
 			"obj-71" : [ "number[1]", "number[1]", 0 ],
 			"obj-82" : [ "slider[4]", "slider[4]", 0 ],
+			"obj-90" : [ "toggle[5]", "toggle[5]", 0 ],
 			"obj-98" : [ "slider", "slider", 0 ],
 			"parameterbanks" : 			{
 
@@ -8218,6 +8269,13 @@
 				"bootpath" : "~/Downloads",
 				"patcherrelativepath" : "../../Downloads",
 				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "f2NoteName.maxpat",
+				"bootpath" : "~/Documents/Contour",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
 				"implicit" : 1
 			}
  ],
