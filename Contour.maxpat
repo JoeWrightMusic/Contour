@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 27.0, -1027.0, 1354.0, 780.0 ],
+		"rect" : [ -238.0, -1018.0, 1354.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -358,11 +358,11 @@
 				"box" : 				{
 					"fontsize" : 11.0,
 					"id" : "obj-116",
-					"linecount" : 48,
+					"linecount" : 45,
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1088.166666666666742, -224.256756722927094, 178.0, 596.0 ],
+					"patching_rect" : [ 1088.166666666666742, -224.256756722927094, 184.0, 560.0 ],
 					"presentation" : 1,
 					"presentation_linecount" : 30,
 					"presentation_rect" : [ 1021.006618845731055, 395.0, 316.0, 375.0 ],
@@ -2784,7 +2784,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1115.000000000000227, 1104.0, 79.0, 22.0 ],
+					"patching_rect" : [ 1001.5, 1121.0, 79.0, 22.0 ],
 					"text" : "s centrePoint"
 				}
 
@@ -5019,7 +5019,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 125.0, 392.0, 50.0, 76.0 ],
-									"text" : "530 134.592896 0.003214"
+									"text" : "544 130.747226 0.074766"
 								}
 
 							}
@@ -5592,7 +5592,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 1037.166666666666742, 1077.5, 83.0, 20.0 ],
+					"patching_rect" : [ 923.666666666666515, 1094.5, 83.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 352.0, 575.0, 83.0, 20.0 ],
 					"text" : "Centre point"
@@ -5609,7 +5609,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 1115.000000000000227, 1077.5, 50.0, 22.0 ],
+					"patching_rect" : [ 1001.5, 1094.5, 50.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 539.690716624259949, 620.0, 50.0, 22.0 ]
 				}
@@ -7421,7 +7421,6 @@
 								"filename" : "WA 1279.wav",
 								"filekind" : "audiofile",
 								"id" : "u522000741",
-								"selection" : [ 0.454616588419405, 0.066510172143975 ],
 								"loop" : 0,
 								"content_state" : 								{
 									"speed" : 1
@@ -7767,7 +7766,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
+					"destination" : [ "obj-132", 0 ],
 					"source" : [ "obj-181", 0 ]
 				}
 
