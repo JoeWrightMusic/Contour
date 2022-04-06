@@ -40,6 +40,342 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-100",
+					"linecount" : 5,
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 664.0, 547.0, 150.0, 74.0 ],
+					"presentation" : 1,
+					"presentation_linecount" : 3,
+					"presentation_rect" : [ 1069.72448132091813, 492.0, 231.0, 47.0 ],
+					"text" : "Shift-click in a square to store\nClick on square to recall Shift-(option|alt)-click on square to delete",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-115",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 698.0, 547.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"number" : [ 80.0 ],
+						"number[1]" : [ 500.0 ],
+						"number[2]" : [ 1.0 ],
+						"number[3]" : [ 461 ],
+						"slider" : [ 14 ],
+						"slider[1]" : [ 28.619528619528619 ],
+						"slider[2]" : [ 79.524619128579531 ],
+						"slider[3]" : [ 392.82153539382017 ],
+						"slider[4]" : [ 844.243739370124899 ],
+						"slider[5]" : [ 454.970424417190543 ],
+						"slider[6]" : [ 313.813740542178436 ],
+						"toggle" : [ 1 ],
+						"toggle[1]" : [ 1 ],
+						"toggle[2]" : [ 1 ],
+						"toggle[3]" : [ 0 ],
+						"toggle[4]" : [ 0 ],
+						"toggle[5]" : [ 1 ],
+						"umenu" : [ 2 ],
+						"umenu[1]" : [ 2 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u845011233"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bubblesize" : 25,
+					"id" : "obj-107",
+					"maxclass" : "preset",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "preset", "int", "preset", "int" ],
+					"patching_rect" : [ 534.0, 535.0, 149.0, 63.0 ],
+					"pattrstorage" : "contour",
+					"presentation" : 1,
+					"presentation_rect" : [ 1104.72448132091813, 422.0, 149.0, 63.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 534.0, 506.0, 116.0, 22.0 ],
+					"text" : "pattrstorage contour"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-103",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 534.0, 476.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"active" : 					{
+						"toggle" : 0
+					}
+,
+					"id" : "obj-102",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 534.0, 614.0, 116.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"client_rect" : [ 32, 87, 733, 593 ],
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0,
+						"storage_rect" : [ 583, 69, 1034, 197 ]
+					}
+,
+					"text" : "pattrstorage contour",
+					"varname" : "contour"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-99",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1039.006618845731055, 397.0, 225.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1021.724481320917903, 395.0, 315.0, 27.0 ],
+					"text" : "PRESETS",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontface" : 1,
+					"fontsize" : 18.0,
+					"id" : "obj-96",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1032.006618845731055, 695.0, 225.0, 27.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1027.724481320917903, 699.0, 315.0, 27.0 ],
+					"text" : "HELP",
+					"textjustification" : 1
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"bgcolor" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgcolor2" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgfillcolor_angle" : 270.0,
+					"bgfillcolor_autogradient" : 0.0,
+					"bgfillcolor_color" : [ 0.450980392156863, 0.686274509803922, 0.403921568627451, 1.0 ],
+					"bgfillcolor_color1" : [ 0.301961, 0.301961, 0.301961, 1.0 ],
+					"bgfillcolor_color2" : [ 0.2, 0.2, 0.2, 1.0 ],
+					"bgfillcolor_proportion" : 0.5,
+					"bgfillcolor_type" : "color",
+					"gradient" : 1,
+					"id" : "obj-94",
+					"linecount" : 2,
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1049.0, 378.0, 89.0, 35.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1128.72448132091813, 729.5, 113.0, 22.0 ],
+					"text" : "Click Here For Help",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-41",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patcher" : 					{
+						"fileversion" : 1,
+						"appversion" : 						{
+							"major" : 8,
+							"minor" : 2,
+							"revision" : 2,
+							"architecture" : "x64",
+							"modernui" : 1
+						}
+,
+						"classnamespace" : "box",
+						"rect" : [ 91.0, 106.0, 641.0, 284.0 ],
+						"bglocked" : 0,
+						"openinpresentation" : 1,
+						"default_fontsize" : 12.0,
+						"default_fontface" : 0,
+						"default_fontname" : "Arial",
+						"gridonopen" : 1,
+						"gridsize" : [ 15.0, 15.0 ],
+						"gridsnaponopen" : 1,
+						"objectsnaponopen" : 1,
+						"statusbarvisible" : 2,
+						"toolbarvisible" : 0,
+						"lefttoolbarpinned" : 2,
+						"toptoolbarpinned" : 2,
+						"righttoolbarpinned" : 2,
+						"bottomtoolbarpinned" : 2,
+						"toolbars_unpinned_last_save" : 0,
+						"tallnewobj" : 0,
+						"boxanimatetime" : 200,
+						"enablehscroll" : 0,
+						"enablevscroll" : 0,
+						"devicewidth" : 0.0,
+						"description" : "",
+						"digest" : "",
+						"tags" : "",
+						"style" : "",
+						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
+						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 2,
+									"outlettype" : [ "", "" ],
+									"patching_rect" : [ 240.0, 448.0, 67.0, 22.0 ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+									"text" : "thispatcher"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-4",
+									"maxclass" : "message",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 240.0, 421.0, 33.0, 22.0 ],
+									"text" : "front"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "newobj",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 240.0, 394.0, 22.0, 22.0 ],
+									"text" : "t b"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-1",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "" ],
+									"patching_rect" : [ 240.0, 351.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"fontsize" : 11.0,
+									"id" : "obj-116",
+									"linecount" : 21,
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 9.160047820935688, 8.743243277072906, 620.0, 265.0 ],
+									"presentation" : 1,
+									"presentation_linecount" : 21,
+									"presentation_rect" : [ 9.160047820935688, 8.743243277072906, 620.0, 265.0 ],
+									"text" : "PITCH ANALYSIS\nUses two objects [retune~] and [Fzero~] to estimate the fundamental of a given soundie. Most settings are best left as they are, with the exception fo the freq min and freq max thresholds.\n\nREPLAY CONTOUR\n\"Recall Speed\" - sets the speed at which the pitch contour plays back, negative values play backwards. \n\n\"Countour Pitch Ratio\" - scales the contour frequencies using the \"Centre Point\" frequency as a reference. Negative values will invert the contour with \"Centre Point\" as a mirror-axis. The \"Centre Point\" can be changed manually using the number box, and reset using the button next to it.\n\n\"Interpolate Recall Values\" - smooths out playback when the playback is slower than the original speed. \n\n\"Rhythmify\" - will only pass values when they are on a given pulse in Beats Per Minute.\n\n\"Block Under Threshold\" - blocks values under a given volume.\n\n\"Frequency Rounding\" - quantises pitch values\n\n\"Sound file / MIDI file record arm\" - will record recalled pitch contours as they are played back. \"Sound file record arm\" will prompt you to save a file location before you record, and \"MIDI file record arm\" will prompt a file save after playback."
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"angle" : 270.0,
+									"bgcolor" : [ 0.448448061943054, 0.509629547595978, 0.51268458366394, 1.0 ],
+									"id" : "obj-157",
+									"maxclass" : "panel",
+									"mode" : 0,
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ -0.839952179064312, 0.0, 640.839952179064312, 284.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ -0.839952179064312, 0.0, 640.839952179064312, 284.0 ],
+									"proportion" : 0.5
+								}
+
+							}
+ ],
+						"lines" : [ 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-1", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-4", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-5", 0 ],
+									"source" : [ "obj-4", 0 ]
+								}
+
+							}
+ ]
+					}
+,
+					"patching_rect" : [ 1021.006619000000001, 431.0, 316.0, 22.0 ],
+					"saved_object_attributes" : 					{
+						"description" : "",
+						"digest" : "",
+						"globalpatchername" : "",
+						"tags" : ""
+					}
+,
+					"text" : "p HELP"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"format" : 6,
 					"id" : "obj-91",
 					"maxclass" : "flonum",
@@ -106,7 +442,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1346.0, 651.0, 150.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 466.0, 150.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 466.0, 150.0, 20.0 ],
 					"text" : "Loop on/off"
 				}
 
@@ -122,7 +458,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1342.0, 673.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 827.925629456885986, 464.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 831.925629456885986, 464.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -334,29 +670,13 @@
 			}
 , 			{
 				"box" : 				{
-					"fontsize" : 11.0,
-					"id" : "obj-116",
-					"linecount" : 44,
-					"maxclass" : "comment",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 1088.166666666666742, -224.256756722927094, 189.0, 547.0 ],
-					"presentation" : 1,
-					"presentation_linecount" : 30,
-					"presentation_rect" : [ 1021.006618845731055, 395.0, 316.0, 375.0 ],
-					"text" : "PITCH ANALYSIS\nUses two objects [retune~] and [Fzero~] to estimate the fundamental of a given soundie. Most settings are best left as they are, with the exception fo the freq min and freq max thresholds.\n\nREPLAY CONTOUR\n\"Recall Speed\" - sets the speed at which the pitch contour plays back, negative values play backwards. \n\n\"Countour Pitch Ratio\" - scales the contour frequencies using the \"Centre Point\" frequency as a reference. Negative values will invert the contour with \"Centre Point\" as a mirror-axis. The \"Centre Point\" can be changed manually using the number box, and reset using the button next to it.\n\n\"Interpolate Recall Values\" - smooths out playback when the playback is slower than the original speed. \n\n\"Rhythmify\" - will only pass values when they are on a given pulse in Beats Per Minute.\n\n\"Block Under Threshold\" - blocks values under a given volume.\n\n\"Frequency Rounding\" - quantises pitch values\n\n\"Sound file / MIDI file record arm\" - will record recalled pitch contours as they are played back. \"Sound file record arm\" will prompt you to save a file location before you record, and \"MIDI file record arm\" will prompt a file save after playback."
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 692.425629456885986, 468.0, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 493.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 493.0, 151.0, 20.0 ],
 					"text" : "Octave Shift"
 				}
 
@@ -505,7 +825,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 378.0, 1325.0, 50.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 819.425629456885986, 492.0, 50.0, 22.0 ]
+					"presentation_rect" : [ 823.425629456885986, 492.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -565,7 +885,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1114.190938065449245, 1698.0, 153.809061934550755, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 737.0, 132.95145720243454, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 737.0, 132.95145720243454, 20.0 ],
 					"text" : "MIDI file record arm"
 				}
 
@@ -582,7 +902,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1088.190938065449245, 1696.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 828.506618845731168, 735.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 832.506618845731168, 735.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -1250,7 +1570,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 42.0, 739.0, 152.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 677.0, 195.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 677.0, 195.0, 20.0 ],
 					"text" : "RECALL RECORD "
 				}
 
@@ -1311,7 +1631,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 610.190938065449245, 1416.0, 153.809061934550755, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 706.0, 132.95145720243454, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 706.0, 132.95145720243454, 20.0 ],
 					"text" : "Sound file record arm"
 				}
 
@@ -1328,7 +1648,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 584.190938065449245, 1414.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 828.506618845731168, 704.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 832.506618845731168, 704.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -1382,7 +1702,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 308.5, 1486.0, 169.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 623.0, 290.359221637248993, 23.0 ],
+					"presentation_rect" : [ 697.425629456885986, 623.0, 290.359221637248993, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 313.813740542178436 ],
@@ -1408,7 +1728,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 315.0, 1464.0, 113.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 601.0, 113.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 601.0, 113.0, 20.0 ],
 					"text" : "Oscillator Volume"
 				}
 
@@ -1425,7 +1745,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 17.5, 1347.0, 169.0, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 572.0, 290.359221637248993, 23.0 ],
+					"presentation_rect" : [ 697.425629456885986, 572.0, 290.359221637248993, 23.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 341.56852086607455 ],
@@ -4991,13 +5311,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 125.0, 392.0, 50.0, 76.0 ],
-									"text" : "1366 140.484344 0."
+									"text" : "3350 136.45665 0.001072"
 								}
 
 							}
@@ -5637,7 +5957,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 24.0, 1325.0, 113.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 549.0, 113.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 549.0, 113.0, 20.0 ],
 					"text" : "Soundfile Volume"
 				}
 
@@ -5650,7 +5970,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 943.0, 797.0, 151.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 438.0, 151.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 438.0, 151.0, 20.0 ],
 					"text" : "Replay recorded phrase"
 				}
 
@@ -5676,7 +5996,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 265.5, 1325.0, 100.0, 22.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 819.425629456885986, 517.5, 100.0, 22.0 ],
+					"presentation_rect" : [ 823.425629456885986, 517.5, 100.0, 22.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "none", "cents", "quarter", "semi", "tone" ],
@@ -5704,7 +6024,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 265.5, 1298.0, 159.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 693.425629456885986, 518.5, 124.0, 20.0 ],
+					"presentation_rect" : [ 697.425629456885986, 518.5, 124.0, 20.0 ],
 					"style" : "default",
 					"text" : "Frequency Rounding"
 				}
@@ -5806,7 +6126,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 1095.0, 797.0, 24.0, 24.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 827.925629456885986, 436.0, 24.0, 24.0 ],
+					"presentation_rect" : [ 831.925629456885986, 436.0, 24.0, 24.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_enum" : [ "off", "on" ],
@@ -7374,18 +7694,7 @@
 					"clipheight" : 182.0,
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"data" : 					{
-						"clips" : [ 							{
-								"absolutepath" : "/Users/joewright/Desktop/WA 1279.wav",
-								"filename" : "WA 1279.wav",
-								"filekind" : "audiofile",
-								"id" : "u577006912",
-								"loop" : 0,
-								"content_state" : 								{
-
-								}
-
-							}
- ]
+						"clips" : [  ]
 					}
 ,
 					"elementcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -7471,7 +7780,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1083.16666666666697, 125.0, 225.0, 47.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.006618845731055, 395.0, 315.0, 27.0 ],
+					"presentation_rect" : [ 681.006618845731055, 395.0, 315.0, 27.0 ],
 					"text" : "PLAYBACK / RECORDING",
 					"textjustification" : 1
 				}
@@ -7488,7 +7797,23 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1067.0, 129.0, 128.0, 128.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 677.006618845731055, 388.0, 327.0, 385.0 ],
+					"presentation_rect" : [ 681.006618845731055, 388.0, 327.0, 385.0 ],
+					"proportion" : 0.5
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"angle" : 270.0,
+					"bgcolor" : [ 0.448448061943054, 0.509629547595978, 0.51268458366394, 1.0 ],
+					"id" : "obj-95",
+					"maxclass" : "panel",
+					"mode" : 0,
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 1019.006618845731055, 388.0, 128.0, 128.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 1021.724481320917903, 388.0, 327.0, 385.0 ],
 					"proportion" : 0.5
 				}
 
@@ -7498,6 +7823,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"source" : [ "obj-1", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"source" : [ "obj-103", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-106", 0 ]
 				}
 
 			}
@@ -8480,6 +8819,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-41", 0 ],
+					"source" : [ "obj-94", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-119", 1 ],
 					"source" : [ "obj-98", 0 ]
 				}
@@ -8515,13 +8861,6 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "WA 1279.wav",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../Desktop",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "freq2note2freq.maxpat",
 				"bootpath" : "~/Documents/Contour",
 				"patcherrelativepath" : ".",
