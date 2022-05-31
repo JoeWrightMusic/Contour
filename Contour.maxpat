@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 32.0, 53.0, 1354.0, 780.0 ],
+		"rect" : [ 86.0, 53.0, 1354.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -70,13 +70,13 @@
 						"slider" : [ 14 ],
 						"slider[1]" : [ 28.619528619528619 ],
 						"slider[2]" : [ 79.524619128579531 ],
-						"slider[3]" : [ 392.82153539382017 ],
-						"slider[4]" : [ 844.243739370124899 ],
+						"slider[3]" : [ 600.000000000000114 ],
+						"slider[4]" : [ 1500.0 ],
 						"slider[5]" : [ 454.970424417190543 ],
 						"slider[6]" : [ 313.813740542178436 ],
 						"toggle" : [ 1 ],
-						"toggle[1]" : [ 1 ],
-						"toggle[2]" : [ 1 ],
+						"toggle[1]" : [ 0 ],
+						"toggle[2]" : [ 0 ],
 						"toggle[3]" : [ 0 ],
 						"toggle[4]" : [ 0 ],
 						"toggle[5]" : [ 1 ],
@@ -3134,6 +3134,7 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"assistshowspatchername" : 0,
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -4017,7 +4018,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 106.0, 640.0, 585.0 ],
+						"rect" : [ 66.0, 106.0, 640.0, 585.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5311,13 +5312,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
-									"linecount" : 5,
+									"linecount" : 3,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 125.0, 392.0, 50.0, 76.0 ],
-									"text" : "3350 136.45665 0.001072"
+									"text" : "1193 139.821274 0."
 								}
 
 							}
@@ -7694,7 +7695,18 @@
 					"clipheight" : 182.0,
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"data" : 					{
-						"clips" : [  ]
+						"clips" : [ 							{
+								"absolutepath" : "/Users/joewright/Desktop/WA 1279.wav",
+								"filename" : "WA 1279.wav",
+								"filekind" : "audiofile",
+								"id" : "u993001251",
+								"loop" : 0,
+								"content_state" : 								{
+
+								}
+
+							}
+ ]
 					}
 ,
 					"elementcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
@@ -8861,6 +8873,13 @@
 		}
 ,
 		"dependency_cache" : [ 			{
+				"name" : "WA 1279.wav",
+				"bootpath" : "~/Desktop",
+				"patcherrelativepath" : "../../Desktop",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
 				"name" : "freq2note2freq.maxpat",
 				"bootpath" : "~/Documents/Contour",
 				"patcherrelativepath" : ".",
