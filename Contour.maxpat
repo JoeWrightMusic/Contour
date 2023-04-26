@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 86.0, 53.0, 1354.0, 780.0 ],
+		"rect" : [ 10.0, 53.0, 1354.0, 780.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -472,22 +472,22 @@
 						"number" : [ 80.0 ],
 						"number[1]" : [ 500.0 ],
 						"number[2]" : [ 1.0 ],
-						"number[3]" : [ 461 ],
+						"number[3]" : [ 800 ],
 						"slider" : [ 14 ],
 						"slider[1]" : [ 28.619528619528619 ],
 						"slider[2]" : [ 79.524619128579531 ],
 						"slider[3]" : [ 600.000000000000114 ],
 						"slider[4]" : [ 1500.0 ],
-						"slider[5]" : [ 454.970424417190543 ],
+						"slider[5]" : [ 646.722417289786563 ],
 						"slider[6]" : [ 313.813740542178436 ],
 						"toggle" : [ 0 ],
 						"toggle[1]" : [ 0 ],
 						"toggle[2]" : [ 0 ],
-						"toggle[3]" : [ 0 ],
-						"toggle[4]" : [ 0 ],
+						"toggle[3]" : [ 1 ],
+						"toggle[4]" : [ 1 ],
 						"toggle[5]" : [ 1 ],
 						"umenu" : [ 2 ],
-						"umenu[1]" : [ 2 ]
+						"umenu[1]" : [ 3 ]
 					}
 ,
 					"text" : "autopattr",
@@ -3485,7 +3485,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 137.0, 238.0, 640.0, 480.0 ],
+						"rect" : [ 149.0, 271.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5691,13 +5691,13 @@
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-12",
-									"linecount" : 3,
+									"linecount" : 5,
 									"maxclass" : "message",
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 125.0, 392.0, 50.0, 49.0 ],
-									"text" : "1240 205.434464 0."
+									"text" : "799 148.354614 0.000005"
 								}
 
 							}
@@ -8076,13 +8076,15 @@
 					"color" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"data" : 					{
 						"clips" : [ 							{
-								"absolutepath" : "/Users/joewright/Desktop/WA 1279.wav",
-								"filename" : "WA 1279.wav",
+								"absolutepath" : "/Users/joewright/Downloads/IF_TXT_LUII.wav",
+								"filename" : "IF_TXT_LUII.wav",
 								"filekind" : "audiofile",
-								"id" : "u993001251",
+								"id" : "u725004460",
+								"selection" : [ 0.002347417840376, 0.021909233176839 ],
 								"loop" : 0,
 								"content_state" : 								{
-
+									"speed" : 1,
+									"pitchshift" : 1
 								}
 
 							}
@@ -9369,9 +9371,9 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "WA 1279.wav",
-				"bootpath" : "~/Desktop",
-				"patcherrelativepath" : "../../Desktop",
+				"name" : "IF_TXT_LUII.wav",
+				"bootpath" : "~/Downloads",
+				"patcherrelativepath" : "../../Downloads",
 				"type" : "WAVE",
 				"implicit" : 1
 			}
